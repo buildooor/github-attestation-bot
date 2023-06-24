@@ -2,6 +2,12 @@
 
 > A GitHub PR Attestation Bot that automatically make an attestation to the [Ethereum Attestation Service](https://easscan.org/) every time a PR is merged into a repository's main branch. This attestation contains a reference to the repository, the specific PR number, the branch name the PR was merged to, and the GitHub username of the account that created the PR.
 
+<img src="https://user-images.githubusercontent.com/168240/248449700-e2ac0c3e-c5bd-4e24-b29f-2572665fbd03.png" width="700px">
+
+Example pull request merged with attestation bot submission:
+
+https://github.com/buildooor/github-action-test/pull/31
+
 ## Demo Bot Install
 
 [https://github.com/apps/pr-attestation](https://github.com/apps/pr-attestation)
