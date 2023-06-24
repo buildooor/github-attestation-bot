@@ -12,9 +12,13 @@ https://github.com/buildooor/github-action-test/pull/31
 
 [https://github.com/apps/pr-attestation](https://github.com/apps/pr-attestation)
 
+Install the demo bot on your repository to see how it works. The bot will automatically make an attestation to the Ethereum Attestation Service on Sepolia every time a PR is merged into the `master` branch of the selected repository.
+
 <img src="https://user-images.githubusercontent.com/168240/248449531-da08e3d9-2c9b-4bce-afad-4bd696c6ed01.png" width="500px">
 
-## Development
+## Install your own bot
+
+### Development
 
 Install dependencies:
 
@@ -62,7 +66,11 @@ Run:
 npm run start
 ```
 
-## Docker
+The webhook will be available at `http://localhost:8000/payload`.
+
+### Docker
+
+Alternatively, you can run the bot in a Docker container.
 
 Build:
 
@@ -76,7 +84,9 @@ Run:
 docker run --env-file=.env -p 8000:8000 github-attestation-bot
 ```
 
-## Bot Setup
+## Github App Setup
+
+You will need to create a Github App to use trigger the bot server via webhooks.
 
 1. Go to [https://github.com/settings/apps]
 1. Click "New Github App" button
